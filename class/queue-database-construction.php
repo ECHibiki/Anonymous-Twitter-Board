@@ -9,26 +9,66 @@ class QueueDatabaseConstruction{
 	public $comment_error = false;
 	public $delete_status = false;
 	
+	public $alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+"q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+	
 	function __construct($connect = false){
 		$sql_ini = fopen("settings/sql.ini", "r");
 		while(!feof($sql_ini)){
 			$line = fgets($sql_ini);
-			$key = substr($line, 0, strpos($line, ":"));
-			$value = trim(substr($line, strpos($line, ":")+1));
+			$key = substr($line, 0, strpos($line, "="));
+			$value = trim(substr($line, strpos($line, "=")+1));
 			$this->sql_data[$key] = $value;
 		}
 		if($connect == true) $this->connectToDatabase();
 	}
 	
 	function connectToDatabase(){
-		$this->connection = new mysqli($this->sql_data["connection"], $this->sql_data["user"],
-									$this->sql_data["pass"], $this->sql_data["database"]);
-		if (!$this->connection) {
-			echo "Error: Unable to connect to MySQL." . PHP_EOL;
-			echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-			echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-			exit;
+		
+		try {
+            $this->connection = new PDO ("mysql:dbname=" . $this->sql_data["database"] . ";host=" . $this->sql_data["connection"],
+												$this->sql_data["user"], 	$this->sql_data["pass"]);
+			$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        } catch (PDOException $e) {
+            $this->logsys .= "Failed to get DB handle: " . $e->getMessage() . "\n";
+        }
+	}
+	
+	function addToTable($tablename, $paramaters){
+		//var_dump($paramaters);
+		$param_len = sizeof($paramaters);
+		$bind_string = "";
+		$table_string= "";
+		$first_comma = false;
+		foreach($paramaters as $key => $param){
+			if(!$first_comma){
+			$bind_string = ":$key";
+			$table_string = "`$key`";
+			$first_comma = true;
+			}
+			else{
+				$bind_string .= ",:$key";
+				$table_string .= ",`$key`";
+			} 
 		}
+		//echo $bind_string . "<br/>";
+		$statement = $this->connection->prepare("INSERT INTO `".$this->sql_data["database"] ."`.`$tablename`($table_string) VALUES(" . $bind_string . ")");
+		echo "INSERT INTO `". $this->sql_data["database"] ."`.`$tablename`($table_string) VALUES(" . $bind_string . ") <br/>";
+		
+		$index = 0;
+		foreach($paramaters as $key => $param){
+			echo "<br/>";
+			$success =	$statement->bindParam(":" . $key , $paramaters[$key]);
+			$index++;
+			echo $success . " " .  $key_arr[$i] . " " . $paramaters[$key] . "\n";
+		}
+		try{
+			echo " =  "  . $statement->execute() . "<br/>";
+		}catch(Exception  $e){
+		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
+		}
+		
 	}
 	
 	function buildQueueForm(){
@@ -140,9 +180,11 @@ Artist: @<Artist>
 				return; 
 		} 
 		$insert_query = $this->connection->prepare("INSERT INTO TweetQueue(PostNo,Comment,ImageLocation) VALUES ('',?,?)");
+		if(!$insert_query) 
+			echo "Prepared Statement Error<br/>";
 		$file_path = $file_string;
 		if (!$insert_query->bind_param("ss", $comment, $file_path)){
-			echo "Prepared Statement Error<br/>";
+			echo "Bined Statement Error<br/>";
 
 		}
 

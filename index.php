@@ -4,7 +4,7 @@
 <?php
 	require("class/twitter-connection.php");
 	$connection = new TwitterConnection();
-	echo $connection->getUserTimeline();
+	$connection->retrieveTimeline();
 ?>
 </body>
 </html>
