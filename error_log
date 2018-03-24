@@ -2138,3 +2138,172 @@ Stack trace:
   thrown in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 105
 [23-Mar-2018 03:27:13 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 109
 [23-Mar-2018 03:27:14 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 109
+[23-Mar-2018 15:00:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined method TwitterConnection::deleteExpiredEntries() in /home4/ecorvid/boards.verniy.xyz/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 9
+[23-Mar-2018 17:16:12 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined method TwitterConnection::deleteExpiredEntries() in /home4/ecorvid/boards.verniy.xyz/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 9
+[23-Mar-2018 19:18:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined method TwitterConnection::deleteExpiredEntries() in /home4/ecorvid/boards.verniy.xyz/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 9
+[23-Mar-2018 19:48:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined method TwitterConnection::deleteExpiredEntries() in /home4/ecorvid/boards.verniy.xyz/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 9
+[23-Mar-2018 19:50:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 116
+[23-Mar-2018 19:50:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 116
+[23-Mar-2018 19:50:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 116
+[23-Mar-2018 21:05:38 America/Chicago] PHP Parse error:  syntax error, unexpected '"<br/>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 98
+[23-Mar-2018 21:12:03 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 96
+[23-Mar-2018 21:12:20 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 96
+[23-Mar-2018 21:59:33 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 21:59:33 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 21:59:55 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 21:59:55 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:01:11 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:01:11 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:27 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:27 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:29 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:29 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:43 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:43 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:45 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:45 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:04:51 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php:112
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(9): TwitterConnection->deleteExpiredEntries()
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 112
+[23-Mar-2018 22:04:52 America/Chicago] PHP Parse error:  syntax error, unexpected '"-=-=-=-=-"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 101
+[23-Mar-2018 22:05:01 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:05:01 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:08:05 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:08:05 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:09:53 America/Chicago] PHP Warning:  unlink(images/15217940757220914Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[23-Mar-2018 22:09:53 America/Chicago] PHP Warning:  unlink(images/15217940758225337Q.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 118
+[24-Mar-2018 04:11:13 America/Chicago] PHP Warning:  unlink(images/15218782204277505m.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:13 America/Chicago] PHP Warning:  unlink(images/15218782205327131Y.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:13 America/Chicago] PHP Warning:  unlink(images/15218782207472450:.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:13 America/Chicago] PHP Warning:  unlink(images/1521878220864160p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:13 America/Chicago] PHP Warning:  unlink(images/15218782209545860o.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:53 America/Chicago] PHP Warning:  unlink(images/1521878220864160p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:11:53 America/Chicago] PHP Warning:  unlink(images/15218782209545860o.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:14:53 America/Chicago] PHP Warning:  unlink(images/1521878220864160p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:14:53 America/Chicago] PHP Warning:  unlink(images/15218782209545860o.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:16:26 America/Chicago] PHP Warning:  unlink(images/15218782207472450:.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:48:20 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 123
+[24-Mar-2018 04:48:21 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 123
+[24-Mar-2018 04:50:59 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:51:18 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:51:22 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:53:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 116
+[24-Mar-2018 04:53:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 116
+[24-Mar-2018 04:53:43 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:53:45 America/Chicago] PHP Fatal error:  Out of memory (allocated 77594624) (tried to allocate 262144 bytes) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 110
+[24-Mar-2018 04:53:52 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:54:39 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:54:53 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:56:33 America/Chicago] PHP Warning:  unlink(images/15218835974941615c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:56:33 America/Chicago] PHP Warning:  unlink(images/15218835975872883c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 105
+[24-Mar-2018 04:59:17 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:00:05 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:00:07 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:00:57 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:01:10 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php:112
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(10): TwitterConnection->deleteExpiredEntries()
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 112
+[24-Mar-2018 05:01:10 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:01:13 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:01:14 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:01:24 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:01:24 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:04 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:04 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:07 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:07 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 121
+[24-Mar-2018 05:02:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 121
+[24-Mar-2018 05:02:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 121
+[24-Mar-2018 05:02:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 121
+[24-Mar-2018 05:02:30 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:02:30 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:03:00 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:03:27 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:04:06 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:04:17 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:04:27 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php:112
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(10): TwitterConnection->deleteExpiredEntries()
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 112
+[24-Mar-2018 05:04:30 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:05:02 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:07:02 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:07:03 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:07:04 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:07:50 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:07:50 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:08:17 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:08:18 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:08:35 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:08:37 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:26 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:26 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 129
+[24-Mar-2018 05:10:27 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:27 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 129
+[24-Mar-2018 05:10:43 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:43 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 129
+[24-Mar-2018 05:10:43 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:55 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:10:55 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:11:38 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php:112
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(10): TwitterConnection->deleteExpiredEntries()
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 112
+[24-Mar-2018 05:11:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 131
+[24-Mar-2018 05:11:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 131
+[24-Mar-2018 05:11:43 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:11:53 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:11:54 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:11:55 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:11:56 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:19 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:20 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:20 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:29 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:30 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:32 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:33 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:58 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:12:59 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:12 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:12 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:17 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:18 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:19 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:19 America/Chicago] PHP Warning:  unlink(images/15218782206323326d.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:20 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:13:20 America/Chicago] PHP Warning:  unlink(images/15218782206323326d.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:14:02 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:14:02 America/Chicago] PHP Warning:  unlink(images/15218782206323326d.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:14:03 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:14:03 America/Chicago] PHP Warning:  unlink(images/15218782206323326d.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 108
+[24-Mar-2018 05:14:16 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:14:16 America/Chicago] PHP Warning:  unlink(images/15218782206323326d.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:14:16 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:14:44 America/Chicago] PHP Warning:  unlink(images/15218854920116845t.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:14:44 America/Chicago] PHP Warning:  unlink(images/1521885492153241c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:15:55 America/Chicago] PHP Warning:  unlink(images/1521886536541355a.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:15:55 America/Chicago] PHP Warning:  unlink(images/152188653664835557.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:17:27 America/Chicago] PHP Warning:  unlink(images/15218865685940861p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:17:35 America/Chicago] PHP Warning:  unlink(images/15218865685940861p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:19:18 America/Chicago] PHP Warning:  unlink(images/15218865685940861p.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[24-Mar-2018 05:19:18 America/Chicago] PHP Warning:  unlink(images/15218865686868272c.jpg): No such file or directory in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107

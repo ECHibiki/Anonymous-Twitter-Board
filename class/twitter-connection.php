@@ -13,8 +13,8 @@ function removeExtraSymbols($string){
 	return $string;
 }
 
-require("class/oauth-random.php");
-require("class/queue-database-construction.php");
+require_once("class/oauth-random.php");
+require_once("class/queue-database-construction.php");
 class TwitterConnection{
 	private $oauth_data = array();
 	private $user_info = array();
@@ -108,6 +108,24 @@ class TwitterConnection{
 		$database_connection = null;
 	}
 	
+	function deleteExpiredEntries(){
+		$database_connection = new QueueDatabaseConstruction(true);
+		
+		$threads = $database_connection->getThreads();
+		$thread_count = 0;
+		foreach($threads as $thread){
+			$thread_count++;
+			if($thread_count > 7){
+				var_dump ($thread);
+				$database_connection->deleteFromUnprocessedImageString($thread["ImageURL"]);
+				$database_connection->recursiveDeleteResponses($thread[0]);
+				$database_connection->deleteThread("Tweet", $thread[0]);//0 is the most relevant PostID
+			}
+		}
+		$database_connection = null;
+	}
+	
+	
 	function endConnection(){
 		$this->database_connection = null;
 	}
@@ -123,7 +141,7 @@ class TwitterConnection{
 				$this->uploadMedia($filename, $entity["media_url_https"]);
 				if(!$first_join){
 					$first_join = true;
-					$image_url_string = $filename;
+					$image_url_string = rawurlencode($filename);
 				}
 				else $image_url_string .= "," . rawurlencode($filename);
 			}
@@ -160,7 +178,6 @@ class TwitterConnection{
 	function addTimelineTweetsToDatabase($timeline_database_arr, $database_connection){
 		var_dump($timeline_database_arr);
 		foreach($timeline_database_arr as $key => $timeline_item){
-				echo $timeline_item[0] . "--1<br/>";
 				$database_connection->addToTable("Tweet",  array("PostID"=>$timeline_item[0],
 							"PostText"=> $timeline_item[1], "ImageURL"=> $timeline_item[2]));
 				if($timeline_item[3] !== null)
@@ -349,7 +366,8 @@ class TwitterConnection{
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		echo "<br/>-- Fin -- <hr/>";
 		$content = curl_exec($curl);
-		echo $content;
+		var_dump (json_decode($content, true));
+		return json_decode($content, true);
 	}
 	
 	function addTweetMedia($file_arr){
