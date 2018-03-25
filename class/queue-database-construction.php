@@ -23,8 +23,7 @@ class QueueDatabaseConstruction{
 		$this->connectToDatabase();
 	}
 	
-	function connectToDatabase(){
-		
+	function connectToDatabase(){	
 		try {
             $this->connection = new PDO ("mysql:dbname=" . $this->sql_data["database"] . ";host=" . $this->sql_data["connection"],
 												$this->sql_data["user"], 	$this->sql_data["pass"]);
@@ -67,6 +66,68 @@ class QueueDatabaseConstruction{
 		}catch(Exception  $e){
 		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
 		}	
+	}
+	
+	function buildThreadPosts($build_type, $display_type){
+		$threads = $this->getThreads();
+		$thread_counter = 0;
+		$row_size = 4;
+		$list_add = "";
+		if($display_type == "list") $list_add = "-list";
+		
+		if($build_type == "embeded"){
+			ob_start();
+			require_once("class/twitter-connection.php");
+			ob_clean();
+			
+			$twitter_connection = new TwitterConnection();
+			
+			foreach($threads as $thread){
+				$post_id = $thread[0];
+				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
+				echo "<li class='thread-container" . $list_add ."' PostNo='" . $post_id ."'>";
+				echo "PostNo: " . $post_id;
+
+				echo $twitter_connection->getEmbededTweet($post_id)["html"];
+
+				echo "</li>";
+								if($thread_counter % $row_size == $row_size - 1) echo"</ul>";
+				$thread_counter++;
+			}
+		}
+		else{
+			foreach($threads as $thread){
+				$post_id = $thread[0];
+				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
+				echo "<li class='thread-container" . $list_add ."' PostNo='" . $post_id ."'>";	
+					echo "<div class='details" . $list_add ."'><ul>
+					<li>PostNo: " . $post_id .
+					"	
+					</li>
+					<li  class='interaction-item" . $list_add ."'>
+					<a href='/?thread=" . $post_id . "'>
+						Open
+					</a>
+					</li>
+					<li  class='interaction-item" . $list_add ."'>
+					<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+						Twitter
+					</a>
+					</li>
+					</ul>
+					</div>
+					<div class='thread-contents" . $list_add ."'>
+					<div class='thread-text'><blockquote>" . $thread["PostText"] ."</blockquote></div>
+					<div class='thread-image" . $list_add ."'>";
+					if($thread["ImageURL"] !== null)
+						$this->createMediaNodeFromRaw($thread["ImageURL"]);
+					else echo "<img/>";
+					echo "</div></div>";
+				echo "</li>";
+				if($thread_counter % $row_size == $row_size - 1) echo "</ul>";
+				$thread_counter++;
+			}
+		}
 	}
 	
 	//Get the count of all items that are not unverified and not replies
@@ -133,24 +194,17 @@ class QueueDatabaseConstruction{
 	}
 	
 	function buildQueueForm(){
-		echo'<form action="add-to-queue.php" enctype="multipart/form-data" method="POST" target="_self">
+		echo'<div class="input-container">
+			<form action="add-to-queue.php" enctype="multipart/form-data" method="POST" target="_self">
 			<label>Comment:</label><br />
-			<textarea id="Comment" name="comment" rows="10" cols="60">';
-			
-		echo '
-<Comment String❤>
-Artist: @<Artist>
-@HentaiAdvisor @Hentai_Retweet @DoujinsApp @waifu_trash @HentaiTeengirl @Hentai_Babess
-<Specific Tagging>
-#hentai #hentaileft #hentaicommunity #nsfw  #lewd #porn #hibiki #verniy
-#Me_On_The_Left';
-			
+			<textarea id="Comment" name="comment" rows="10" cols="60" placeholder = "Comment Text Here">';			
 		echo '</textarea>
 			<p id="CharacterCount"></p>
 
 			<input name="MAX_FILE_SIZE" type="hidden" value="5242880" />
 			<input name="file1" type="file" id="f1" /><input name="file2" type="file" id="f2" /><br/>
 			<input name="file3" type="file" id="f3" /><input name="file4" type="file" id="f4" /><br/>
+			</div>
 			<hr />
 			<p id="errorMsg">Input a comment and/or file</p>
 			<input id="submit" type="submit" /></form>
@@ -264,16 +318,7 @@ Artist: @<Artist>
 				if(is_numeric ($key)) unset($result_arr[0][$key]);
 				else {
 					if($column == 2 && $display_images){
-						$img_arr = explode(",", $col);
-						foreach($img_arr as $img){
-							$img = urldecode($img);
-							$img_ext = pathinfo($img, PATHINFO_EXTENSION);
-							if(strcmp($img_ext, "png") == 0 || strcmp($img_ext, "jpg")  == 0|| strcmp($img_ext, "gif") == 0) 
-								echo "<td>" . $this->createImageNode($img) . "</td>";
-							else
-								echo "<td>" . $this->createVideoNode($img) . "</td>";
-							
-						}
+						$this->createMediaNodeFromRaw($col);
 					}
 					else{
 						if($key == "PostNo") echo "<td>$col - $row</td>";
@@ -287,11 +332,26 @@ Artist: @<Artist>
 		echo "</table><hr/>";
 	}
 
+	function createMediaNodeFromRaw($img_path_unprocessed){
+		$img_arr = explode(",", $img_path_unprocessed);
+		foreach($img_arr as $img){
+			$img = urldecode($img);
+			$img_ext = pathinfo($img, PATHINFO_EXTENSION);
+			if(strcmp($img_ext, "png") == 0 || strcmp($img_ext, "jpg")  == 0|| strcmp($img_ext, "gif") == 0) 
+				echo "<td>" . $this->createImageNode($img) . "</td>";
+			else
+				echo "<td>" . $this->createVideoNode($img) . "</td>";
+			
+		}
+	}
+	
 	function createImageNode($img_path){
-		return "<img src='$img_path' width='250px'/>";
+		//return "<img src='$img_path' width='50%'/>";
+		return "<a href='$img_path'><img src='$img_path' class='media'/></a>";
 	}
 	function createVideoNode($vid_path){
-		return "<video src='$vid_path' autoplay='true' loop='true' width='250px'/>";
+		//return "<video src='$vid_path' autoplay='true' loop='true' width='50%'/>"
+		return "<a href='$vid_path'><video src='$vid_path' autoplay='true' loop='true' class='media' /></a>";
 	}
 
 	function retrieveOldestEntry(){

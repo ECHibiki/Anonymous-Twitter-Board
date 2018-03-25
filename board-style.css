@@ -1,0 +1,123 @@
+body{
+	
+}
+
+li{
+  list-style-type:none;
+}
+
+.page-properties{
+	margin:3% 6%;
+	background-image:url('images/__hibiki_kantai_collection_drawn_by_tsubasa_tsubasa__13a05f362f32e8029c7925607e08f1a6.jpg');
+    background-position: -61% 30%;
+	background-attachment: fixed;
+	
+	}
+
+.row-container{
+	position:relative;
+	float:left;
+	display:inline;
+	width:100%;
+	margin:3% 0%;
+}
+
+.thread-container{
+	position:relative;
+	float:left;
+	display:inline;
+	margin:0% 1%;
+	border: solid black 1px;
+	padding:1%;
+	width:20%;
+	
+	background-color:white;
+}
+
+#top-settings{
+    background: rgba(200,200,200,0.5);
+    padding: 0% 5% 1% 5%;
+}
+
+#queue-form-container{
+	display: inline-block;
+	padding:1%;
+	background-color: rgba(155,155,155,0.5);
+}
+
+#input-container{
+	display: inline-block;
+}
+
+.details{
+	margin:-5% -5% 2% -5%;
+	border:solid 1px black;
+	padding:2% 0% 2% 0%;
+	
+	background-color:rgb(255,255,200);
+}
+
+.details-list{
+	margin:-3.1% -8.8% 2% -8.8%;
+	border:solid 1px black;
+	padding:1%;
+	background-color:rgb(255,255,200);
+}
+
+
+.row-container-list{
+	width:100%;
+	margin:3% 0%;
+}
+
+.thread-container-list{
+	margin:1% 2%;
+	padding:1% 3% 1% 3%;
+	width:35%;
+	border: 2px solid black;
+	
+	background-color:white;
+}
+
+.interaction-item{
+	display:inline-block;
+	margin: 1% 10%;
+}
+
+.interaction-item-list{
+	display:inline-block;
+	margin: 1% 5%;
+}
+
+.thread-contents{
+}
+.thread-contents-list{
+display:flex;
+}
+
+.thread-image{
+	
+}
+
+.thread-text{
+	margin-left:-10%
+}
+
+.thread-text-list{
+
+}
+
+.thread-image-list{
+border-left:solid black 1px;
+margin-left:24%;
+}
+
+.media{
+	width:100%;
+	margin:1% 1% -5% -5%;
+	padding:3% 5% 3% 5%;
+}
+
+#style-settings{}
+
+#comment-container{}

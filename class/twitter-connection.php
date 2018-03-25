@@ -24,11 +24,19 @@ class TwitterConnection{
 	private $status_api = "https://api.twitter.com/1.1/statuses/update.json";
 	private $user_timeline_api = "https://api.twitter.com/1.1/statuses/user_timeline.json";	
 	private $mention_timeline_api = "https://api.twitter.com/1.1/statuses/mentions_timeline.json";
+	private $oembed_api = "https://publish.twitter.com/oembed";
+	private $default_status_string = "https://twitter.com/:USERNAME/status/";
 	
 	function __construct(){
 		$this->oauth_data = 	 $this->getIniFile("settings/keys.ini");
 		$this->user_info = 		 $this->getIniFile("settings/userinfo.ini");
 		$this->post_properties = $this->getIniFile("settings/postproperties.ini");
+		$this->buildStatusString();
+		
+	}
+	
+	function buildStatusString(){
+		$this->default_status_string = str_replace(":USERNAME", $this->user_info["User-Name"], $this->default_status_string);
 	}
 	
 	function getIniFile($path){
@@ -43,6 +51,15 @@ class TwitterConnection{
 			$return_array[$key] = $value;
 		}
 		return $return_array;
+	}
+	
+	function getEmbededTweet($post_id){
+		$query_string = "url=" . rawurlencode($this->default_status_string . "$post_id");
+		$curl = curl_init($this->oembed_api . "?$query_string");
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+		$content = curl_exec($curl);
+
+		return json_decode($content,true);
 	}
 	
 	function retrieveTimeline(){
@@ -136,9 +153,19 @@ class TwitterConnection{
 		echo "<hr/>";
 		if($tweet_array["extended_entities"] != null){
 			foreach($tweet_array["extended_entities"] ["media"] as $entity){
-				$filename = "images/" . (microtime(true) * 10000) . (rand(0,1000)) 
-								. removeExtraSymbols($entity["media_url_https"][rawurlencode(rand(0, strlen($entity["media_url_https"])))]) . ".jpg";
-				$this->uploadMedia($filename, $entity["media_url_https"]);
+				$filename_url ="";
+				if(isset($entity["video_info"])){
+					$filename_url = $entity["video_info"]["variants"][0]["url"];
+					$extention = pathinfo($filename_url, PATHINFO_EXTENSION );
+					echo "$filename_url $extention";
+				}
+				else{
+					$filename_url = $entity["media_url_https"];
+					$extention = pathinfo($filename_url , PATHINFO_EXTENSION );
+				}
+				
+				$filename = "images/" . (microtime(true) * 10000) . (rand(0,10000)) . ".$extention";
+				$this->uploadMedia($filename, $filename_url);
 				if(!$first_join){
 					$first_join = true;
 					$image_url_string = rawurlencode($filename);
@@ -195,6 +222,8 @@ class TwitterConnection{
 		$oauth_version = "1.0";
 		$timestamp = time();
 		$reply_exclude = "false";
+
+		echo $this->user_info["User-ID"];
 
 		$get_fields  = "since_id=" . $since_id . "&count=" . $count . "&include_rts=false&exclude_replies=$reply_exclude&user_id=" . $this->user_info["User-ID"];
 		//$msg_len = (strlen($this->user_timeline_api . "?$get_fields"));  //GET REQUESTS HAVE NO DYNAMIC LENGTH
