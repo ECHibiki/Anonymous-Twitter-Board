@@ -54,7 +54,7 @@ class TwitterConnection{
 	}
 	
 	function getEmbededTweet($post_id){
-		$query_string = "url=" . rawurlencode($this->default_status_string . "$post_id");
+		$query_string = "url=" . rawurlencode($this->default_status_string . "$post_id") . "&maxwidth=" . 550;
 		$curl = curl_init($this->oembed_api . "?$query_string");
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		$content = curl_exec($curl);
@@ -67,6 +67,8 @@ class TwitterConnection{
 		
 		$timeline_arr = $this->getUserTimeline($this->post_properties["TopPostNo"]);
 		$timeline_database_arr = array();
+		echo "<pre>";
+		var_dump($timeline_arr);
 
 		if($timeline_arr["errors"][0]["code"] ==  null && sizeof($timeline_arr) != 0){
 			foreach ($timeline_arr as $timeline_item){
@@ -107,7 +109,7 @@ class TwitterConnection{
 		else{
 			$postfile = fopen("settings/postproperties.ini", "w");
 			echo "TopPostNo=$highest_post_id<br/>";
-			fwrite($postfile, "TopPostNo=$highest_post_id");
+			//fwrite($postfile, "TopPostNo=$highest_post_id\n" . "Catalog-Size=" . $this->post_properties["Catalog-Size"]);
 		}
 		
 		$combined_database_arr = array_merge ($timeline_database_arr, $reply_arr_container);
@@ -116,7 +118,7 @@ class TwitterConnection{
 			echo "<hr>";
 			
 		$this->recursiveEchoJson($combined_database_arr,0);
-				echo "<pre>";
+				echo sizeof($timeline_database_arr)  . "<pre>";
 		if(sizeof($timeline_database_arr) != 0){
 			$this->addTimelineTweetsToDatabase($combined_database_arr, $database_connection);
 		} 
@@ -132,7 +134,8 @@ class TwitterConnection{
 		$thread_count = 0;
 		foreach($threads as $thread){
 			$thread_count++;
-			if($thread_count > 7){
+			echo(var_dump($this->post_properties));
+			if($thread_count > $this->post_properties["Catalog-Size"]){
 				var_dump ($thread);
 				$database_connection->deleteFromUnprocessedImageString($thread["ImageURL"]);
 				$database_connection->recursiveDeleteResponses($thread[0]);
@@ -163,8 +166,10 @@ class TwitterConnection{
 					$filename_url = $entity["media_url_https"];
 					$extention = pathinfo($filename_url , PATHINFO_EXTENSION );
 				}
-				
+				echo $filename_url;
 				$filename = "images/" . (microtime(true) * 10000) . (rand(0,10000)) . ".$extention";
+				
+							
 				$this->uploadMedia($filename, $filename_url);
 				if(!$first_join){
 					$first_join = true;
@@ -211,7 +216,7 @@ class TwitterConnection{
 					$database_connection->addToTable("Response",  array("PostID"=>$timeline_item[0], "RepliesTo"=>$timeline_item[3]));
 			}
 	}
-	function uploadMedia($filename,$url){
+	function uploadMedia($filename,$url){ echo($filename . " " . $url);
 		file_put_contents($filename, fopen($url, 'r'));
 	}
 	

@@ -22,17 +22,6 @@ li{
 	margin:3% 0%;
 }
 
-.thread-container{
-	position:relative;
-	float:left;
-	display:inline;
-	margin:0% 1%;
-	border: solid black 1px;
-	padding:1%;
-	width:20%;
-	
-	background-color:white;
-}
 
 #top-settings{
     background: rgba(200,200,200,0.5);
@@ -49,6 +38,15 @@ li{
 	display: inline-block;
 }
 
+.embed-details{
+	text-align:center;
+	margin-right:10%;
+}
+.embed-detail-item{
+	 display: inline-block;
+	 padding:0% 8%;
+}
+
 .details{
 	margin:-5% -5% 2% -5%;
 	border:solid 1px black;
@@ -58,25 +56,18 @@ li{
 }
 
 .details-list{
-	margin:-3.1% -8.8% 2% -8.8%;
 	border:solid 1px black;
 	padding:1%;
+	width:98%;
 	background-color:rgb(255,255,200);
 }
 
 
 .row-container-list{
-	width:100%;
 	margin:3% 0%;
 }
-
-.thread-container-list{
-	margin:1% 2%;
-	padding:1% 3% 1% 3%;
-	width:35%;
-	border: 2px solid black;
-	
-	background-color:white;
+.row-reply-list{
+	margin:1% 0%;
 }
 
 .interaction-item{
@@ -90,32 +81,80 @@ li{
 }
 
 .thread-contents{
+	height:90%;
 }
 .thread-contents-list{
-display:flex;
+	display:flex;
+
+	max-height:50%;
 }
 
-.thread-image{
+.thread-container{
+	position:relative;
+	float:left;
+	display:inline;
+	margin:0% 1%;
+	border: solid black 1px;
+	padding:1%;
+	width:20%;
+	height:50%;
 	
+	background-color:white;
+}
+
+
+.thread-container-list{
+	margin:8% 0%;
+	
+	border: 2px solid black;
+	
+	background-color:white;
+}
+
+.reply-container-list{
+	margin:0.2% 0%;
+	
+	border: 2px solid black;
+	
+	background-color:white;
 }
 
 .thread-text{
-	margin-left:-10%
+	overflow:scroll;
+	height:22%;
 }
 
 .thread-text-list{
+	width:100%;
+	overflow:scroll;
+}
 
+.thread-image{
+	padding:2%;
+	overflow:scroll;
+	height:75%;
 }
 
 .thread-image-list{
-border-left:solid black 1px;
-margin-left:24%;
+	overflow:scroll;
+	border-left:solid black 1px;
+	padding:1.5%;
 }
 
 .media{
 	width:100%;
-	margin:1% 1% -5% -5%;
-	padding:3% 5% 3% 5%;
+}
+
+.embeded{
+	padding-left:30px;
+	padding-top:15px;
+	padding-bottom:5px;
+	
+	height:auto;
+}
+
+.max{
+	width:550px;
 }
 
 #style-settings{}

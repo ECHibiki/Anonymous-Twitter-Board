@@ -219,3 +219,792 @@ Stack trace:
 #0 {main}
   thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 35
 [25-Mar-2018 00:27:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 355
+[25-Mar-2018 00:40:50 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'TwitterConnection' not found in /home4/ecorvid/boards.verniy.xyz/fetch.php:6
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/fetch.php on line 6
+[25-Mar-2018 12:16:18 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 38
+[25-Mar-2018 12:39:12 America/Chicago] PHP Parse error:  syntax error, unexpected ''>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 92
+[25-Mar-2018 12:41:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[25-Mar-2018 12:41:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[25-Mar-2018 12:42:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 107
+[25-Mar-2018 12:55:45 America/Chicago] PHP Warning:  Illegal string offset 'Catalog-Size' in /home4/ecorvid/boards.verniy.xyz/class/twitter-connection.php on line 137
+[25-Mar-2018 12:56:26 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'TwitterConnection' not found in /home4/ecorvid/boards.verniy.xyz/fetch.php:6
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/fetch.php on line 6
+[25-Mar-2018 12:56:33 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'TwitterConnection' not found in /home4/ecorvid/boards.verniy.xyz/fetch.php:6
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/fetch.php on line 6
+[25-Mar-2018 13:42:50 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 38
+[25-Mar-2018 13:59:27 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 38
+[25-Mar-2018 16:11:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:29 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:11:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:12:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:12:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:12:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function buildThread() on null in /home4/ecorvid/boards.verniy.xyz/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 42
+[25-Mar-2018 16:27:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:02:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 251
+[25-Mar-2018 17:02:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 251
+[25-Mar-2018 17:02:42 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 254
+[25-Mar-2018 17:02:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:03 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:03 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:04 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:05 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:05 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:03:17 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:03:17 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:04:20 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:04:23 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:04:24 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:04:25 America/Chicago] PHP Warning:  Missing argument 1 for QueueDatabaseConstruction::getReplies(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:12:39 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:40 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:41 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:44 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:45 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:46 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 270
+[25-Mar-2018 17:12:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:12:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:12:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 125
+[25-Mar-2018 17:16:07 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 38
+[25-Mar-2018 17:29:48 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies_recursive_bypa' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:29:52 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies_recursive_bypa' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:29:53 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies_recursive_bypa' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:29:54 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies_recursive_bypa' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:29:54 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies_recursive_bypa' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 253
+[25-Mar-2018 17:30:00 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/index.php on line 38
+[25-Mar-2018 17:30:02 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot access empty property in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:271
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(270): QueueDatabaseConstruction->getReplies('978020297059258...')
+#1 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(72): QueueDatabaseConstruction->getReplies('977994801600704...')
+#2 /home4/ecorvid/boards.verniy.xyz/index.php(41): QueueDatabaseConstruction->buildThread('embeded', 'catalog', '977994801600704...')
+#3 {main}
+
+Next Error: Cannot access empty property in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:271
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(270): QueueDatabaseConstruction->getReplies('978020297059258...')
+#1 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(72): QueueDatabaseConstruction->getReplies('977994801600704...')
+#2 /home4/ecorvid/boards.verniy.xyz/index.php(41): Qu in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 271
+[25-Mar-2018 17:34:27 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:34:27 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:34:28 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:34:28 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:34:29 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:34:29 America/Chicago] PHP Warning:  Missing argument 2 for QueueDatabaseConstruction::getRepliesRecursive(), called in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 278 and defined in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 262
+[25-Mar-2018 17:36:58 America/Chicago] PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:123
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(41): QueueDatabaseConstruction->buildThread('embeded', 'list', '977994801600704...')
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 123
+[25-Mar-2018 17:36:59 America/Chicago] PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:123
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/index.php(41): QueueDatabaseConstruction->buildThread('embeded', 'list', '977994801600704...')
+#1 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 123
+[25-Mar-2018 17:37:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 77
+[25-Mar-2018 17:37:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 77
+[25-Mar-2018 17:37:31 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 77
+[25-Mar-2018 17:41:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 252
+[25-Mar-2018 17:41:32 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 252
+[25-Mar-2018 17:41:32 America/Chicago] PHP Parse error:  syntax error, unexpected '$thread_replies' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 252
+[25-Mar-2018 17:41:36 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function getPostDetails() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:251
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(72): QueueDatabaseConstruction->getReplies('977994801600704...')
+#1 /home4/ecorvid/boards.verniy.xyz/index.php(41): QueueDatabaseConstruction->buildThread('embeded', 'list', '977994801600704...')
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 251
+[25-Mar-2018 17:41:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function getPostDetails() in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:251
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(72): QueueDatabaseConstruction->getReplies('977994801600704...')
+#1 /home4/ecorvid/boards.verniy.xyz/index.php(41): QueueDatabaseConstruction->buildThread('embeded', 'list', '977994801600704...')
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 251
+[25-Mar-2018 17:54:24 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72
+[25-Mar-2018 17:54:25 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72
+[25-Mar-2018 17:54:25 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 72
+[25-Mar-2018 17:54:31 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 257
+[25-Mar-2018 17:54:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 257
+[25-Mar-2018 17:54:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 257
+[25-Mar-2018 17:54:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 257
+[26-Mar-2018 16:13:10 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:15:51 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:16:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:17:43 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:32:05 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:38:40 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 16:57:29 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/add-to-queue.php(27): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 21:42:06 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[26-Mar-2018 21:42:22 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[26-Mar-2018 21:51:04 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 7
+[26-Mar-2018 21:51:16 America/Chicago] PHP Warning:  openssl_public_encrypt() expects parameter 4 to be integer, string given in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 7
+[26-Mar-2018 21:51:18 America/Chicago] PHP Warning:  openssl_public_encrypt() expects parameter 4 to be integer, string given in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 7
+[26-Mar-2018 21:51:19 America/Chicago] PHP Warning:  openssl_public_encrypt() expects parameter 4 to be integer, string given in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 7
+[26-Mar-2018 21:58:24 America/Chicago] PHP Parse error:  syntax error, unexpected '$send_data' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 27
+[26-Mar-2018 21:58:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$send_data' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 27
+[26-Mar-2018 21:58:34 America/Chicago] PHP Warning:  openssl_private_encrypt(): key param is not a valid private key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 21:58:52 America/Chicago] PHP Warning:  openssl_private_encrypt(): key param is not a valid private key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 22:09:23 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:09:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:09:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:09:37 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:09 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 22:12:09 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:21 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:22 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:31 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:31 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:31 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:37 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:12:37 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:13:47 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 27
+[26-Mar-2018 22:13:47 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 28
+[26-Mar-2018 22:13:47 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 27
+[26-Mar-2018 22:13:47 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 28
+[26-Mar-2018 22:13:55 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:13:56 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:09 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:10 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:10 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:10 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:10 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:11 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:11 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:14:19 America/Chicago] PHP Parse error:  syntax error, unexpected '$encrypted_data' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 22:14:19 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:14:20 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:14:20 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:16:21 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:16:21 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:16:22 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 30
+[26-Mar-2018 22:20:30 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:20:30 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:20:31 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:20:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:20:52 America/Chicago] PHP Warning:  openssl_private_encrypt(): key param is not a valid private key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 22:20:52 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:20:52 America/Chicago] PHP Warning:  openssl_private_encrypt(): key param is not a valid private key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 29
+[26-Mar-2018 22:20:52 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:21:08 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:21:08 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:21:09 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:21:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:21:30 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:07 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:08 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:08 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:12 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:12 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:13 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:24:19 America/Chicago] PHP Fatal error:  Uncaught Exception: Unable to encrypt data. Perhaps it is bigger than the key size? in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:31
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 31
+[26-Mar-2018 22:27:34 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:34 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:35 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:35 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:35 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:35 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:35 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:35 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:36 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:36 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:27:47 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 21
+[26-Mar-2018 22:27:47 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 23
+[26-Mar-2018 22:32:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:32:30 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:32:57 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:33:46 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:33:50 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:34:00 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:36:18 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:37:31 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:37:32 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 22:38:42 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:38:42 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 22:39:42 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 22:39:43 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:446
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(446): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 446
+[26-Mar-2018 22:39:53 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 22
+[26-Mar-2018 22:42:24 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 19
+[26-Mar-2018 22:46:50 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 17
+[26-Mar-2018 22:47:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 18
+[26-Mar-2018 22:50:52 America/Chicago] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[26-Mar-2018 22:51:24 America/Chicago] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[27-Mar-2018 00:20:23 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 310
+[27-Mar-2018 00:20:24 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 310
+[27-Mar-2018 00:22:36 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:22:36 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:443
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(443): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 443
+[27-Mar-2018 00:23:03 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:23:03 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:443
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(443): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 443
+[27-Mar-2018 00:23:08 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:23:08 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:443
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(443): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 443
+[27-Mar-2018 00:23:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:24:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:25:12 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 33
+[27-Mar-2018 00:25:13 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 33
+[27-Mar-2018 00:25:13 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 33
+[27-Mar-2018 00:25:23 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:23 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:23 America/Chicago] PHP Fatal error:  require(): Failed opening required 'class/queue-database-construction' (include_path='.:/opt/php70/lib/php') in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Fatal error:  require(): Failed opening required 'class/queue-database-construction' (include_path='.:/opt/php70/lib/php') in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:24 America/Chicago] PHP Fatal error:  require(): Failed opening required 'class/queue-database-construction' (include_path='.:/opt/php70/lib/php') in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:33 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:33 America/Chicago] PHP Warning:  require(class/queue-database-construction): failed to open stream: No such file or directory in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:25:33 America/Chicago] PHP Fatal error:  require(): Failed opening required 'class/queue-database-construction' (include_path='.:/opt/php70/lib/php') in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 2
+[27-Mar-2018 00:27:19 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QueueDatabaseConstruction' not found in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 3
+[27-Mar-2018 00:43:57 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 00:43:57 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 00:43:58 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 00:43:59 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 00:44:00 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 00:44:01 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:32
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 32
+[27-Mar-2018 01:01:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$decrypted_ticket' (T_VARIABLE) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 55
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:02:26 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:03:23 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:03:32 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:05:36 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:07:12 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php:94
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 94
+[27-Mar-2018 01:09:42 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:29 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:10:37 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:12:59 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:14:38 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:57
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 57
+[27-Mar-2018 01:16:04 America/Chicago] PHP Fatal error:  Uncaught Exception: Err in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php:58
+Stack trace:
+#0 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 01:47:19 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/ecorvid/boards.verniy.xyz/add-to-queue.php on line 58
+[27-Mar-2018 02:01:44 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:453
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(453): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 453
+[27-Mar-2018 02:01:52 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:453
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(453): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 453
+[27-Mar-2018 02:45:13 America/Chicago] PHP Warning:  preg_match() expects at least 2 parameters, 1 given in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 25
+[27-Mar-2018 03:21:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:21:16 America/Chicago] PHP Parse error:  syntax error, unexpected '$ticket' (T_VARIABLE), expecting ',' or ';' in /home4/ecorvid/boards.verniy.xyz/ticket-gen.php on line 38
+[27-Mar-2018 03:32:44 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:453
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(453): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 453
+[27-Mar-2018 03:45:38 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecorvid_TwitterBoard_DB.TweetQueue' doesn't exist in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php:453
+Stack trace:
+#0 /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php(453): PDO->query('Select * from T...')
+#1 /home4/ecorvid/boards.verniy.xyz/confirmation.php(53): QueueDatabaseConstruction->displayTabularDatabase('TweetQueue', true)
+#2 {main}
+  thrown in /home4/ecorvid/boards.verniy.xyz/class/queue-database-construction.php on line 453

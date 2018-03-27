@@ -68,39 +68,21 @@ class QueueDatabaseConstruction{
 		}	
 	}
 	
-	function buildThreadPosts($build_type, $display_type){
-		$threads = $this->getThreads();
-		$thread_counter = 0;
-		$row_size = 4;
+	function buildThread($build_type, $display_type, $thread_id){
+		$replies = $this->getReplies($thread_id);
+		
 		$list_add = "";
+		$reply_counter = 0;
+		$row_size = 4;
 		if($display_type == "list") $list_add = "-list";
 		
-		if($build_type == "embeded"){
-			ob_start();
-			require_once("class/twitter-connection.php");
-			ob_clean();
-			
-			$twitter_connection = new TwitterConnection();
-			
-			foreach($threads as $thread){
-				$post_id = $thread[0];
-				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
-				echo "<li class='thread-container" . $list_add ."' PostNo='" . $post_id ."'>";
-				echo "PostNo: " . $post_id;
-
-				echo $twitter_connection->getEmbededTweet($post_id)["html"];
-
-				echo "</li>";
-								if($thread_counter % $row_size == $row_size - 1) echo"</ul>";
-				$thread_counter++;
-			}
-		}
-		else{
-			foreach($threads as $thread){
-				$post_id = $thread[0];
-				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
-				echo "<li class='thread-container" . $list_add ."' PostNo='" . $post_id ."'>";	
-					echo "<div class='details" . $list_add ."'><ul>
+		if($build_type == "native"){
+			foreach($replies as $reply){
+				$post_id = $reply[0];
+				if($reply_counter % $row_size == 0) echo"<ul class='row-reply" . $list_add ."'>";
+				echo "<li class='reply-container" . $list_add ."' PostNo='" . $post_id ."'>";	
+				//details
+					echo "<div class='details" . $list_add ."'><ul class='embed-details'>
 					<li>PostNo: " . $post_id .
 					"	
 					</li>
@@ -115,9 +97,92 @@ class QueueDatabaseConstruction{
 					</a>
 					</li>
 					</ul>
-					</div>
+					</div>";
+					//contents;
+					echo "
 					<div class='thread-contents" . $list_add ."'>
-					<div class='thread-text'><blockquote>" . $thread["PostText"] ."</blockquote></div>
+					<div class='thread-text" . $list_add ."'><blockquote>" . $reply["PostText"] ."</blockquote></div>
+					<div class='thread-image" . $list_add ."'>";
+					if($thread["ImageURL"] !== null)
+						$this->createMediaNodeFromRaw($reply["ImageURL"]);
+					else echo "<img/>";
+					echo "</div></div>";
+				echo "</li>";
+				if($reply_counter % $row_size == $row_size - 1) echo "</ul>";
+				$reply_counter++;
+			}
+		}
+		else{
+			ob_start();
+			require_once("class/twitter-connection.php");
+			ob_clean();
+			
+			$twitter_connection = new TwitterConnection();
+			
+			foreach($replies as $reply){
+				$post_id = $reply[0];
+				if($reply_counter % $row_size == 0) echo"<ul class='row-reply" . $list_add ."'>";
+
+				echo "<li class='embeded reply-container" . ($display_type == "list" ? "-list max":"") . "' PostNo='" . $post_id ."'>";
+				echo "<div class=''><ul class='embed-details'>
+					<li class=''>PostNo: " . $post_id .
+					"	
+					</li>
+					<li class='embed-detail-item'>
+					<a href='/?thread=" . $post_id . "'>
+						Open
+					</a>
+					</li>
+					<li class='embed-detail-item'>
+					<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+						Twitter
+					</a>
+					</li>
+					</ul>
+					</div>";
+
+				echo $twitter_connection->getEmbededTweet($post_id)["html"];
+
+				echo "</li>";
+								if($reply_counter % $row_size == $row_size - 1) echo"</ul>";
+				$reply_counter++;
+			}
+		}
+	}
+	
+	function buildAllThreads($build_type, $display_type){
+		$threads = $this->getThreads();
+		$thread_counter = 0;
+		$row_size = 4;
+		$list_add = "";
+		if($display_type == "list") $list_add = "-list";
+		
+		if($build_type == "native"){
+			foreach($threads as $thread){
+				$post_id = $thread[0];
+				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
+				echo "<li class='thread-container" . $list_add ."' PostNo='" . $post_id ."'>";	
+				//details
+					echo "<div class='details" . $list_add ."'><ul class='embed-details'>
+					<li>PostNo: " . $post_id .
+					"	
+					</li>
+					<li  class='interaction-item" . $list_add ."'>
+					<a href='/?thread=" . $post_id . "'>
+						Open
+					</a>
+					</li>
+					<li  class='interaction-item" . $list_add ."'>
+					<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+						Twitter
+					</a>
+					</li>
+					</ul>
+					</div>";
+					//contents;
+					echo "
+					<div class='thread-contents" . $list_add ."'>
+					<div class='thread-text" . $list_add ."'><blockquote>" . $thread["PostText"] ."</blockquote></div>
 					<div class='thread-image" . $list_add ."'>";
 					if($thread["ImageURL"] !== null)
 						$this->createMediaNodeFromRaw($thread["ImageURL"]);
@@ -125,6 +190,42 @@ class QueueDatabaseConstruction{
 					echo "</div></div>";
 				echo "</li>";
 				if($thread_counter % $row_size == $row_size - 1) echo "</ul>";
+				$thread_counter++;
+			}
+		}
+		else{
+			ob_start();
+			require_once("class/twitter-connection.php");
+			ob_clean();
+			
+			$twitter_connection = new TwitterConnection();
+			
+			foreach($threads as $thread){
+				$post_id = $thread[0];
+				if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
+
+				echo "<li class='embeded thread-container" . ($display_type == "list" ? "-list max":"") . "' PostNo='" . $post_id ."'>";
+				echo "<div class=''><ul class='embed-details'>
+					<li class=''>PostNo: " . $post_id .
+					"	
+					</li>
+					<li class='embed-detail-item'>
+					<a href='/?thread=" . $post_id . "'>
+						Open
+					</a>
+					</li>
+					<li class='embed-detail-item'>
+					<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+						Twitter
+					</a>
+					</li>
+					</ul>
+					</div>";
+
+				echo $twitter_connection->getEmbededTweet($post_id)["html"];
+
+				echo "</li>";
+								if($thread_counter % $row_size == $row_size - 1) echo"</ul>";
 				$thread_counter++;
 			}
 		}
@@ -142,8 +243,44 @@ class QueueDatabaseConstruction{
 			$threads = $statement->fetchAll();
 		}catch(Exception  $e){
 		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
-		}					
+		}				
 		return $threads;
+	}
+	
+	function getReplies($post_id){
+		$thread_replies= [];
+		$this->getRepliesRecursive($post_id, $thread_replies);
+		$thread_replies = array_reverse($thread_replies);
+		$head = $this->getPostDetails("Tweet", "PostID", $post_id);
+		array_unshift($thread_replies, $head[0]);
+
+		return $thread_replies;
+	}
+	
+	function getRepliesRecursive($post_id, &$thread_replies_store){
+		$statement = $this->connection->prepare('SELECT * FROM `Tweet` 
+								LEFT JOIN `Response` ON `Response`.`PostID` = `Tweet`.`PostID`
+								WHERE `Response`.`RepliesTo` = :postID
+								ORDER BY Tweet.PostID DESC');
+		$statement->bindParam(":postID", $post_id);
+		try{	
+			$statement->execute();
+			$threads = $statement->fetchAll();
+		}catch(Exception  $e){
+		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
+		}				
+
+		foreach($threads as $thread){
+			$this->getRepliesRecursive($thread["PostID"], $thread_replies_store);
+			array_push($thread_replies_store, $thread);
+		}
+		return;
+	}
+
+	function testBlock($val){
+		echo "<pre>";
+		var_dump($val);
+		echo "</pre>";
 	}
 	
 	function deleteThread($table, $postID){
@@ -160,6 +297,16 @@ class QueueDatabaseConstruction{
 		return $response;
 	}
 	
+	function deletePost($table, $refining_paramater, $bind_val){
+		$statement = $this->connection->prepare("DELETE FROM `$table` WHERE `$table`.`$refining_paramater` = :bindval");
+		$statement->bindParam(":bindval", $bind_val);
+		try{
+			$response = $statement->execute();
+		}catch(Exception  $e){
+		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
+		}	
+	}
+	
 	function deleteFromUnprocessedImageString($image_path_uprocessed){
 		if($image_path_uprocessed === null) return;
 		$image_path_uprocessed_arr = explode(",", $image_path_uprocessed);
@@ -169,14 +316,22 @@ class QueueDatabaseConstruction{
 		}
 	}
 	
+	function getPostDetails($table, $refining_paramater, $bind_val){
+		$statement = $this->connection->prepare("SELECT * FROM `$table` WHERE `$table`.`$refining_paramater` = :bindval");
+		$statement->bindParam(":bindval", $bind_val);
+		try{
+			$response = $statement->execute();
+			return $statement->fetchAll();
+		}catch(Exception  $e){
+		   echo "<strong>" . $e->getMessage() . "</strong><br/>";
+		}	
+	}
+	
 	function recursiveDeleteResponses($post_id){
 		if($post_id == null){
 			return;
 		}
-		$statement = $this->connection->prepare("SELECT * FROM `Response` WHERE `Response`.`RepliesTo` = :replyID");
-		$statement->bindParam(":replyID", $post_id);
-		$statement->execute();
-		$response = $statement->fetchAll();
+		$response = $this->getPostDetails("Response", "RepliesTo", $post_id);
 		echo "A " . var_dump ($response[0][0]) . "<br/>";
 		$this->recursiveDeleteResponses($response[0][0]);
 		if($response[0] == null){
@@ -195,7 +350,7 @@ class QueueDatabaseConstruction{
 	
 	function buildQueueForm(){
 		echo'<div class="input-container">
-			<form action="add-to-queue.php" enctype="multipart/form-data" method="POST" target="_self">
+			<form action="add-to-queue.php" enctype="multipart/form-data" method="POST" target="_self" id="submit-form">
 			<label>Comment:</label><br />
 			<textarea id="Comment" name="comment" rows="10" cols="60" placeholder = "Comment Text Here">';			
 		echo '</textarea>
@@ -207,7 +362,7 @@ class QueueDatabaseConstruction{
 			</div>
 			<hr />
 			<p id="errorMsg">Input a comment and/or file</p>
-			<input id="submit" type="submit" /></form>
+			<input id="submit-button" type="submit" /></form>
 		';
 	}
 	
@@ -219,14 +374,13 @@ class QueueDatabaseConstruction{
 	}
 	
 	function checkCommentValid($tweet_comment){
-		$COMMENT_MAX = 500;
+		$COMMENT_MAX = 280;
 
 		if(mb_strlen($tweet_comment) > $COMMENT_MAX){
-			echo "Comment too long[Server]<br/>";
-			$this->comment_error = true;
+			$this->comment_error = 0;
 			return "";
 		}
-		$this->comment_error = false;
+		$this->comment_error = 1;
 		return $tweet_comment;
 	}
 	
