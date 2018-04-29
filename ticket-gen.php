@@ -1,39 +1,32 @@
 <?php
-	$pub_key="-----BEGIN PUBLIC KEY-----
-
------END PUBLIC KEY-----";
-
+error_reporting (0);
+//also verifies comment
 $ticket =  rand(0,1000000000);
 $ip = $_SERVER["HTTP_X_REAL_IP"];
 $comment = $_GET["comment"];
+$file_string = $_GET["files"];
+//include image path names
 
-require("class/queue-database-construction.php");
-$construction = new QueueDatabaseConstruction();
-$storage_ip = $construction->getPostDetails("SubmissionTicket", "IPAddress", $ip)[0]["IPAddress"];
+require("class/board-level-database-connection.php");
+require("class/board-functions.php");
+$connection = new BoardLevelDatabaseConnection();
+$storage_ip = $connection->getPostDetails("SubmissionTicket", "IPAddress", $ip)[0]["IPAddress"];
 
-if(preg_match("/VERIFY: /", $comment) == 0){
-	if(preg_match("/http/", $comment) == 1) {
-		echo "-2 http";
-		die;
-	}
-}
-$comment = $construction->checkCommentValid($comment);//use the ticket's comment for submission
-if($construction->comment_error == 0){
-	echo "-3 Comment-too-long";
+$comment = BoardFunctions::checkSubmissionValid($comment, $file_string, $connection);//use the ticket's comment for submission
+if(BoardFunctions::$comment_error != 0){
+	echo BoardFunctions::$comment_error;
 	die;
 }
 
-if($storage_ip != $ip){
-	$send_ticket = "$ticket,$comment,$ip";  // 10+45=55
-	$encrypted_ticket="";
-	$success_code = openssl_public_encrypt($send_ticket, $encrypted_ticket, $pub_key);
-	
-	if (!$success_code) throw new Exception('Err');
-	else echo base64_encode($encrypted_ticket);
-	//Not actually secure, but done for fun. https://paragonie.com/blog/2016/12/everything-you-know-about-public-key-encryption-in-php-is-wrong
-	//File is just to prevent multiple submissions
+$file_ticket = 0;
+if(!is_null($file_string)) $file_ticket = 1; 
 
-	$construction->addToTable("SubmissionTicket", array("TicketValue"=>$ticket, "PostText"=>$comment, "IPAddress"=>$ip));	
+if($storage_ip != $ip){
+	$send_ticket = "$ticket,$comment,$ip,$file_ticket";  // 10+45+280+2=336
+	$compressed_ticket= base64_encode(gzcompress($send_ticket, 9));
+	if ($compressed_ticket == "") throw new Exception('Err');
+	echo $compressed_ticket;
+	$connection->addToTable("SubmissionTicket", array("TicketValue"=>$ticket, "PostText"=>$comment, "IPAddress"=>$ip));	
 }
 else {
 	echo -1;

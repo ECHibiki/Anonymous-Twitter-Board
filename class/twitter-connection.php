@@ -6,19 +6,16 @@ A NOTE ON TWITTER ERRORS:
 	ERROR 32 MEANS YOU GOT THE VALUES WRONG
 */
 
-function removeExtraSymbols($string){
-	$string = str_replace(".", "a", $string);
-	$string = str_replace("%", "b", $string);
-	$string = str_replace("/", "c", $string);
-	return $string;
-}
-
-require_once("class/oauth-random.php");
-require_once("class/queue-database-construction.php");
 class TwitterConnection{
 	private $oauth_data = array();
 	private $user_info = array();
 	private $post_properties = array();
+	
+	function getPostProperties(){
+		return $this->post_properties;
+	}
+	
+	private $path_prefix ="";
 	
 	private $media_api = "https://upload.twitter.com/1.1/media/upload.json";
 	private $status_api = "https://api.twitter.com/1.1/statuses/update.json";
@@ -27,30 +24,32 @@ class TwitterConnection{
 	private $oembed_api = "https://publish.twitter.com/oembed";
 	private $default_status_string = "https://twitter.com/:USERNAME/status/";
 	
-	function __construct(){
-		$this->oauth_data = 	 $this->getIniFile("settings/keys.ini");
-		$this->user_info = 		 $this->getIniFile("settings/userinfo.ini");
-		$this->post_properties = $this->getIniFile("settings/postproperties.ini");
-		$this->buildStatusString();
+	function __construct($path_prefix = ""){
+		$this->path_prefix  = $path_prefix;
+		require_once("additional-functions.php");
+		require_once("board-functions.php");
+		require_once("database-connection.php");
 		
+		$this->oauth_data = 	 StandardFunctions::getIniFile($path_prefix . "settings/keys.ini");
+		$this->user_info = 		 StandardFunctions::getIniFile($path_prefix . "settings/userinfo.ini");
+		$this->post_properties = StandardFunctions::getIniFile($path_prefix . "settings/postproperties.ini");
+		$this->buildStatusString();
+	}
+	
+	function endConnection(){
+		$this->database_connection = null;
+	}
+	
+	//base64 processing
+	function removeExtraSymbols($string){
+		$string = str_replace(".", "a", $string);
+		$string = str_replace("%", "b", $string);
+		$string = str_replace("/", "c", $string);
+		return $string;
 	}
 	
 	function buildStatusString(){
 		$this->default_status_string = str_replace(":USERNAME", $this->user_info["User-Name"], $this->default_status_string);
-	}
-	
-	function getIniFile($path){
-		$path_string = fopen($path,"r");
-		$return_array = array();
-		while(!feof($path_string)){
-			$line = fgets($path_string);
-			$key = substr($line,0,strpos($line, "="));
-					//eat last character
-			$value = trim(substr($line, strpos($line, "=")+1));
-
-			$return_array[$key] = $value;
-		}
-		return $return_array;
 	}
 	
 	function getEmbededTweet($post_id){
@@ -64,11 +63,10 @@ class TwitterConnection{
 	
 	function retrieveTimeline(){
 		$highest_post_id = -1;
-		
+		echo $this->post_properties["TopPostNo"];
 		$timeline_arr = $this->getUserTimeline($this->post_properties["TopPostNo"]);
 		$timeline_database_arr = array();
 		echo "<pre>";
-		var_dump($timeline_arr);
 
 		if($timeline_arr["errors"][0]["code"] ==  null && sizeof($timeline_arr) != 0){
 			foreach ($timeline_arr as $timeline_item){
@@ -81,7 +79,8 @@ class TwitterConnection{
 			}			
 		}
 		else echo $timeline_arr["errors"][0]["code"] . "Tim<br/>";
-
+				//var_dump($timeline_arr);
+		
 		echo "<hr>"; //From the post ID try and find any replies
 					
 		$reply_arr = $this->getTweetReplies($this->post_properties["TopPostNo"]);	
@@ -94,62 +93,29 @@ class TwitterConnection{
 				$reply_text = $reply_item["text"];
 				$reply_image_string =  $this->grabTwitterImage($reply_item);
 				$responding_to_id = $reply_item['in_reply_to_status_id'];
-				echo "$lowest_post_id -- $responding_to_id<hr/>";
+				//echo "$reply_id -- $responding_to_id<hr/>";
 				array_push($reply_arr_container, [$reply_id, $reply_text, $reply_image_string, $responding_to_id]);
 				
 				$highest_post_id = $reply_id > $highest_post_id ? $reply_id : $highest_post_id;
 			}
 		}
-		else echo $reply_arr["errors"][0]["code"] . "Rep<br/>";
+				else echo $reply_arr["errors"][0]["code"] . "Rep<br/>";
 		
 		if(sizeof($timeline_database_arr) + sizeof($reply_arr_container) == 0){
 			echo "No Updates<hr/>";
 			return;
 		} 
 		else{
-			$postfile = fopen("settings/postproperties.ini", "w");
+			$postfile = fopen($this->path_prefix . "settings/postproperties.ini", "w");
 			echo "TopPostNo=$highest_post_id<br/>";
-			//fwrite($postfile, "TopPostNo=$highest_post_id\n" . "Catalog-Size=" . $this->post_properties["Catalog-Size"]);
+			var_dump($postfile);
+			fwrite($postfile, "TopPostNo=$highest_post_id\n" . "Catalog-Size=" . $this->post_properties["Catalog-Size"]);
 		}
 		
-		$combined_database_arr = array_merge ($timeline_database_arr, $reply_arr_container);
-		$database_connection = new QueueDatabaseConstruction(true);
+		$combined_database_arr = array_merge ($timeline_database_arr, $reply_arr_container);	
+		return $combined_database_arr;
+	}
 		
-			echo "<hr>";
-			
-		$this->recursiveEchoJson($combined_database_arr,0);
-				echo sizeof($timeline_database_arr)  . "<pre>";
-		if(sizeof($timeline_database_arr) != 0){
-			$this->addTimelineTweetsToDatabase($combined_database_arr, $database_connection);
-		} 
-			echo "</pre>";
-			
-		$database_connection = null;
-	}
-	
-	function deleteExpiredEntries(){
-		$database_connection = new QueueDatabaseConstruction(true);
-		
-		$threads = $database_connection->getThreads();
-		$thread_count = 0;
-		foreach($threads as $thread){
-			$thread_count++;
-			echo(var_dump($this->post_properties));
-			if($thread_count > $this->post_properties["Catalog-Size"]){
-				var_dump ($thread);
-				$database_connection->deleteFromUnprocessedImageString($thread["ImageURL"]);
-				$database_connection->recursiveDeleteResponses($thread[0]);
-				$database_connection->deleteThread("Tweet", $thread[0]);//0 is the most relevant PostID
-			}
-		}
-		$database_connection = null;
-	}
-	
-	
-	function endConnection(){
-		$this->database_connection = null;
-	}
-	
 	function grabTwitterImage($tweet_array){
 		$first_join = false;
 		$image_url_string = null;
@@ -160,68 +126,30 @@ class TwitterConnection{
 				if(isset($entity["video_info"])){
 					$filename_url = $entity["video_info"]["variants"][0]["url"];
 					$extention = pathinfo($filename_url, PATHINFO_EXTENSION );
-					echo "$filename_url $extention";
 				}
 				else{
 					$filename_url = $entity["media_url_https"];
 					$extention = pathinfo($filename_url , PATHINFO_EXTENSION );
 				}
-				echo $filename_url;
-				$filename = "images/" . (microtime(true) * 10000) . (rand(0,10000)) . ".$extention";
 				
-							
-				$this->uploadMedia($filename, $filename_url);
+				$filename = "../images/" . (microtime(true) * 10000) . (rand(0,10000)) . ".$extention";
+				echo "$filename_url: " .$filename;
+		
+				BoardFunctions::uploadMedia($filename, $filename_url);
 				if(!$first_join){
 					$first_join = true;
 					$image_url_string = rawurlencode($filename);
 				}
 				else $image_url_string .= "," . rawurlencode($filename);
 			}
+				
 		}	
-
+	
 		return $image_url_string;
-	}
-
-	function recursiveEchoJson($json, $indents){
-		echo "<pre>";
-		foreach($json as $key => $attribute){
-			if(is_array ($attribute)){
-				$this->makeIndents($indents);
-				echo "$key {\n";
-				
-				$this->recursiveEchoJson($attribute, ++$indents);
-				
-				$this->makeIndents(--$indents);
-				echo "}\n";
-			}
-			else{
-				$this->makeIndents($indents);
-				echo "$key = $attribute \n";
-			}
-		}
-		echo "</pre>";
-		if($indents == 1) echo "<hr/>";
-	}
-	
-	function makeIndents($indent_count){
-		for ($i = 0; $i < $indent_count ; $i++){	echo "\t";	}
-	}
-	
-	function addTimelineTweetsToDatabase($timeline_database_arr, $database_connection){
-		var_dump($timeline_database_arr);
-		foreach($timeline_database_arr as $key => $timeline_item){
-				$database_connection->addToTable("Tweet",  array("PostID"=>$timeline_item[0],
-							"PostText"=> $timeline_item[1], "ImageURL"=> $timeline_item[2]));
-				if($timeline_item[3] !== null)
-					$database_connection->addToTable("Response",  array("PostID"=>$timeline_item[0], "RepliesTo"=>$timeline_item[3]));
-			}
-	}
-	function uploadMedia($filename,$url){ echo($filename . " " . $url);
-		file_put_contents($filename, fopen($url, 'r'));
 	}
 	
 	function getUserTimeline($since_id = 976628662446551043, $count = 100){
-		
+
 		$random_value = OauthRandom::randomAlphaNumet(32);
 		$method = "HMAC-SHA1";
 		$oauth_version = "1.0";
@@ -400,7 +328,7 @@ class TwitterConnection{
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		echo "<br/>-- Fin -- <hr/>";
 		$content = curl_exec($curl);
-		var_dump (json_decode($content, true));
+		//var_dump (json_decode($content, true));
 		return json_decode($content, true);
 	}
 	
@@ -413,12 +341,12 @@ class TwitterConnection{
 				//create data in binary/b64
 				$mime_type = pathinfo($file_arr[$file], PATHINFO_EXTENSION);
 				$file_arr[$file] = urldecode($file_arr[$file]);
-				$binary = file_get_contents($file_arr[$file]);
+				$binary = file_get_contents($this->path_prefix . $file_arr[$file]);
 
 				$base64 = base64_encode($binary);
 				
 				//upload file to twitter and get id for use in files
-				$size = filesize($file_arr[$file]);
+				$size = filesize( $this->path_prefix . $file_arr[$file]);
 				if($file == 0)
 					$image_string = $this->getMediaID($base64, $size, 'image/' . $mime_type);
 				else
@@ -627,5 +555,5 @@ class TwitterConnection{
 	
 
 }
-	echo"run script from externals<br/>";
+	//echo"run script from externals<br/>";
 ?>

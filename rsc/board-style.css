@@ -1,0 +1,196 @@
+body{
+	
+}
+
+li{
+  list-style-type:none;
+
+}
+
+.input-item{
+    text-align: center;
+    width: 10%;
+    background-color:rgb(202,219,221);
+}
+
+.input-box{
+    text-align: left;
+    background-color:rgb(230,245,255);
+}
+
+.top-widget{
+	position:fixed;
+	margin:-3% -6%
+}
+
+.page-properties{
+	margin:3% 6%;
+	background-image:url('__hibiki_kantai_collection_drawn_by_tsubasa_tsubasa__13a05f362f32e8029c7925607e08f1a6.jpg');
+    background-position: -169px -175px;
+	background-attachment: fixed;
+	
+	}
+
+.post-table{
+	text-align:center;
+	background: linear-gradient(rgba(255,255,185,0.9), rgba(210,255,255,0.3));
+}
+.post-table th{
+	text-align:center;
+	background: linear-gradient(rgba(255,255,255,1.0), rgba(180,180,180,0.5));
+}
+	
+.row-container{
+	position:relative;
+	float:left;
+	display:inline;
+	width:100%;
+	margin:3% 0%;
+}
+
+.view-container{
+	padding:1%;
+	margin:0.5%;
+	background-color:rgba(255,255,255,0.5);
+}
+
+#top-settings{
+    background: rgba(200,200,200,0.5);
+    padding: 0% 5% 1% 5%;
+}
+
+#queue-form-container{
+	display: inline-block;
+	padding:1%;
+	background-color: rgba(155,155,155,0.5);
+}
+
+#input-container{
+	display: inline-block;
+}
+
+.embed-details{
+	text-align:center;
+	margin-right:10%;
+}
+.embed-detail-item{
+	 display: inline-block;
+	 padding:0% 8%;
+}
+
+.details{
+	margin:-5% -5% 2% -5%;
+	border:solid 1px black;
+	padding:2% 0% 2% 0%;
+	
+	background-color:rgb(255,255,200);
+}
+
+.details-list{
+	border:solid 1px black;
+	padding:1%;
+	width:98%;
+	background-color:rgb(255,255,200);
+}
+
+
+.row-container-list{
+	margin:3% 0%;
+}
+.row-reply-list{
+	margin:1% 0%;
+}
+
+.interaction-item{
+	display:inline-block;
+	margin: 1% 10%;
+}
+
+.interaction-item-list{
+	display:inline-block;
+	margin: 1% 5%;
+}
+
+.thread-contents{
+	height:90%;
+}
+.thread-contents-list{
+	display:flex;
+
+	max-height:50%;
+}
+
+.thread-container{
+	position:relative;
+	float:left;
+	display:inline;
+	margin:0% 1%;
+	border: solid black 1px;
+	padding:1%;
+	width:20%;
+	height:50%;
+	
+	background-color:white;
+}
+
+
+.thread-container-list{
+	margin:8% 0%;
+	
+	border: 2px solid black;
+	
+	background-color:white;
+}
+
+.reply-container-list{
+	margin:0.2% 0%;
+	
+	border: 2px solid black;
+	
+	background-color:white;
+}
+
+.thread-text{
+	overflow:scroll;
+	height:22%;
+}
+
+.thread-text-list{
+	width:100%;
+	overflow:scroll;
+}
+
+.thread-image{
+	padding:2%;
+	overflow:scroll;
+	height:75%;
+}
+
+.thread-image-list{
+	overflow:scroll;
+	border-left:solid black 1px;
+	padding:1.5%;
+}
+
+.media{
+	width:100%;
+}
+.table-media{
+	max-width:400px;
+}
+
+.embeded{
+	padding-left:30px;
+	padding-top:15px;
+	padding-bottom:5px;
+	
+	height:auto;
+}
+
+.max{
+	width:550px;
+}
+
+#style-settings{}
+
+#comment-container{}
