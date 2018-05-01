@@ -52,8 +52,8 @@ class TwitterConnection{
 		$this->default_status_string = str_replace(":USERNAME", $this->user_info["User-Name"], $this->default_status_string);
 	}
 	
-	function getEmbededTweet($post_id){
-		$query_string = "url=" . rawurlencode($this->default_status_string . "$post_id") . "&maxwidth=" . 550;
+	function getEmbededTweet($post_id, $width=550){
+		$query_string = "url=" . rawurlencode($this->default_status_string . "$post_id") . "&maxwidth=" . $width;
 		$curl = curl_init($this->oembed_api . "?$query_string");
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		$content = curl_exec($curl);

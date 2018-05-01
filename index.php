@@ -1,5 +1,5 @@
 <?php
-error_reporting (0);
+error_reporting(0);
 	if(isset($_POST["page-style"]) && isset($_POST["display-style"])){
 		setcookie("page-style", $_POST["page-style"]);
 		setcookie("display-style", $_POST["display-style"]);
@@ -28,7 +28,6 @@ error_reporting (0);
 	
 <?php 
 		echo"
-
 		<div class='card  w-75 mt-5 ml-5'>
 			<div class='card-header '>
 				<button class='btn btn-link' data-toggle='collapse' data-target='#timerandsettings' aria-expanded='true' aria-controls='timerandsettings'>Settings</button>
@@ -38,7 +37,8 @@ error_reporting (0);
 					<span><strong>Time Until Next Update: </strong>	<span id='time'></span><br/>
 					<div id='style-settings'>
 						<form action='' method='post'>
-							<label>Catalog View: <input type='radio' name='display-style' value='catalog' ></label> <label>List View: <input type='radio' name='display-style' value='li' ></label><br/>
+							<label>Catalog View: <input type='radio' name='display-style' value='catalog' checked=1>
+							</label> <label>List View: <input type='radio' name='display-style' value='list' " . ($_COOKIE["display-style"] == "list" ? "checked=1" : "") . "></label><br/>
 							<label>Embeded View: <input type='radio' name='page-style' value='embeded' checked=1></label>
 							<label>Native View: <input type='radio' name='page-style' value='native'" . ($_COOKIE["page-style"] == "native" ? "checked=1" : "") . "></label><br/>
 							<input type='submit'>
@@ -48,7 +48,6 @@ error_reporting (0);
 				</div>
 			</div>
 		</div>
-
 ";
 		
 		$connection = new BoardLevelDatabaseConnection();
@@ -57,12 +56,12 @@ error_reporting (0);
 	
 		if(isset($_GET["thread"]) && $_GET["thread"] !== ""){	
 			echo "</div><div id='posts-container' >";
-				BoardFunctions::buildThread($_COOKIE["page-style"], $_COOKIE["display-style"], $_GET["thread"]);
+				BoardFunctions::buildThread($_COOKIE["page-style"], $_COOKIE["display-style"], $_GET["thread"], $connection);
 			echo "</div>";
 		}
 		else{
 			echo "<div id='queue-form-container'>";
-				BoardFunctions::buildQueueForm($_COOKIE["page-style"], $_COOKIE["display"]);
+				BoardFunctions::buildQueueForm($_COOKIE["page-style"], $_COOKIE["display-style"]);
 			echo "</div></div>";//top settings end
 			
 			echo '			

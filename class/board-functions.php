@@ -17,10 +17,14 @@ class BoardFunctions{
 		$track = 'audio/' . $track_list[$song];
 
 		echo '
-			<audio controls autoplay preload="none" class="top-widget">
+			<audio id="blaring-music" controls autoplay preload="none" class="top-widget">
 			  <source src="' . $track  . '" type="audio/mpeg">
 			  Your browser does not support the audio tag.
 			</audio>
+			<script>
+			  var audio = document.getElementById("blaring-music");
+			  audio.volume = 0.1;
+			</script>
 			';
 
 			$post_properties = parse_ini_file("settings/postproperties.ini");
@@ -695,7 +699,7 @@ class BoardFunctions{
 			
 			$twitter_connection = new TwitterConnection();
 			
-			if($display_type == "list" || true){
+			if($display_type == "list"){
 				foreach($threads as $thread){
 					$post_id = $thread[0];
 					
@@ -731,12 +735,142 @@ class BoardFunctions{
 						</div></div>
 						
 						</div>";
-					//if($thread_counter % $row_size == $row_size - 1) echo "</ul>";
-					
-					
+					//if($thread_counter % $row_size == $row_size - 1) echo "</ul>";			
 				}
 			}
-			else{}
+			else{
+				foreach($threads as $thread){
+					$post_id = $thread[0];
+					echo "<div class='d-flex flex-wrap border m-4' style='width:550px' PostNo='" . $post_id ."'>";	
+					//details
+						echo "<div class='border px-0 py-2  col-12  bg-light' style='height:5rem'>
+								<div class='col'>
+									<div class='row'>
+									<div class='col-1'></div>
+										<span class='col-10'>PostNo: " . $post_id ."</span>
+									
+									<div class='col-1'></div>
+									</div>
+									<div class='row'>
+										<div class='col-1'></div>
+										<span class='col-3'>
+										<a href='/?thread=" . $post_id . "' class='px-4 py-0'>
+											Open
+										</a>
+										</span>
+											<div class='col-1'></div>
+										<span class='col-3'>
+										<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+											Twitter
+										</a>
+										</span>
+									</div>
+								</div>
+						</div>";
+						//contents;
+						echo "
+						<div class='px-1 py-0'>
+						<div class='p-2'>
+						<div class=''>" . $twitter_connection->getEmbededTweet($post_id)["html"] ."
+						</div>
+						</div></div>";
+					echo "</div>";
+					//if($thread_counter % $row_size == $row_size - 1) echo "</ul>";
+				}
+			}
+		}
+	}
+	
+	public static function buildThread($build_type, $display_type, $thread_id, $database_con){
+		//echo "<hr/>";
+		$replies = $database_con->getReplies($thread_id);
+		//var_dump ($replies);
+		$list_add = "";
+		$reply_counter = 0;
+		$row_size = 4;
+		if($build_type == "native"){
+			foreach($replies as $reply){
+				$post_id = $reply[0];
+					echo "<div class='container px-0 my-4 border' PostNo='" . $post_id ."'>";	
+					//details
+						echo "<div class='border p-2 bg-light'>
+								<div class='col'>
+								<div class='row'>
+									<span>PostNo: " . $post_id ."</span>
+									<span  class=''>
+								</div>
+								<div class='row'>
+									<a href='/?thread=" . $post_id . "' class='px-4 py-0'>
+										Open
+									</a>
+									</span>
+									<span  class=''>
+									<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+										Twitter
+									</a>
+									</span>
+								</div>
+								</div>
+						</div>";
+						//contents;
+						echo "
+						<div class='row px-1 py-0'>
+						<div class='col-8 p-4'><blockquote>" . $reply["PostText"] ."</blockquote></div>
+						<div class='col-4'>";
+						if($reply["ImageURL"] !== null)
+							BoardFunctions::createMediaNodeFromRaw($reply["ImageURL"]);
+						else echo "<img/>";
+						echo "</div>
+						</div>";
+					echo "</div>";
+				
+			}
+		}
+		else{
+			ob_start();
+			require_once("class/twitter-connection.php");
+			ob_clean();
+			
+			$twitter_connection = new TwitterConnection($connection->path_prefix);
+			
+			foreach($replies as $reply){
+				$post_id = $reply[0];
+					
+										//if($thread_counter % $row_size == 0) echo"<ul class='row-container" . $list_add ."'>";
+					echo "<div class='container w-50 border p-0 m-4' PostNo='" . $post_id ."'>";	
+					//details
+						echo "<div class='border m-0 bg-light'>
+								<div class='col'>
+								<div class='row'>
+									<span>PostNo: " . $post_id ."</span>
+									<span  class=''>
+								</div>
+								<div class='row'>
+									<a href='/?thread=" . $post_id . "' class='px-4 py-0'>
+										Open
+									</a>
+									</span>
+									<span  class=''>
+									<a href='https://twitter.com/Qazoku/status/". $post_id ."'>
+										Twitter
+									</a>
+									</span>
+								</div>
+								</div>
+						</div>";
+						//contents;
+						echo "<div class='row'>
+						<div class='col-1'></div>
+							<div class='col-10 px-0 py-0'>";
+								echo $twitter_connection->getEmbededTweet($post_id)["html"];
+							echo "</div>
+							<div class='col-1'></div>
+						</div></div>
+						
+						</div>";
+					//if($thread_counter % $row_size == $row_size - 1) echo "</ul>";
+					
+			}
 		}
 	}
 	
