@@ -166,7 +166,7 @@ function submitProcess(event){
 			ticket_arr = ticket.split(" ");	
 			if(ticket_arr[0] == "-1") window.alert("Don't double click submit.............\nServer got the comment, is processing image.");
 			if(ticket_arr[0] == "-2") {
-				var response = window.confirm("Comment will require admin verification due to text filter. Please fix the following or press OK to be put on the verification list '" + ticket_arr[1].replace("/_/", " ") + "'");
+				var response = window.confirm("Comment will require admin verification due to text filter. Please fix the following or press OK to be put on the verification list '" + ticket_arr[1].replace("/_/g", " ") + "'");
 				if(response == true){
 					document.getElementById("Comment").value = "VERIFY: " +  document.getElementById("Comment").value.trim();
 					submitProcess(event);

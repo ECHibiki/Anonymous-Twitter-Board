@@ -114,8 +114,6 @@ class BoardFunctions{
 
 
 	public static function buildQueueForm(){
-			
-		
 		echo'<div class="card w-75 mx-5 my-0">
 				<div class="card-header">
 					<button class="btn btn-link" data-toggle="collapse" data-target="#comment-fields" aria-expanded="true" aria-controls="comment-fields">Comment</button>
@@ -123,7 +121,7 @@ class BoardFunctions{
 				<div id="comment-fields" class="collapse px-5 pt-2 pb-5">
 					<form action="add-to-queue.php" enctype="multipart/form-data" method="POST" target="_self" id="submit-form">
 					<br />
-					<textarea id="Comment" name="comment" rows="10" cols="60" placeholder = "Comment Text Here"></textarea>
+					<textarea id="Comment" name="comment" rows="10" class="form-control" placeholder = "Comment Text Here"></textarea>
 					<p id="CharacterCount" class="lead"></p>
 
 					<input name="MAX_FILE_SIZE" type="hidden" value="5242880" />

@@ -32,7 +32,7 @@ error_reporting(0);
 			<div class='card-header '>
 				<button class='btn btn-link' data-toggle='collapse' data-target='#timerandsettings' aria-expanded='true' aria-controls='timerandsettings'>Settings</button>
 			</div>
-			<div id='timerandsettings'  class='collapse collapsed'>
+			<div id='timerandsettings'  class='collapse show'>
 				<div class='card-body'>
 					<span><strong>Time Until Next Update: </strong>	<span id='time'></span><br/>
 					<div id='style-settings'>
